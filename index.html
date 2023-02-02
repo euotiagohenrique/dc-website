@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+    <head>
+        <link rel="shortcut icon" type="imagex/png" href="./assets/image/dc-icone.svg">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+	referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style-main.css">
+        <link rel="stylesheet" href="./css/video-player.css">
+        <title>DC | Bem vindo a DC</title>
+    </head>
+<body>  
+    <!-- 1º CABEÇALHO - LOGO, NAVBAR, ICON -->
+    <header id="home">
+        <nav class="navbar" id="navbar">
+            <div class="navbar-header">
+                <div id="navbar-container__menu">
+                    <button type="button" class="navbar-header__toggle menu"
+                    onclick="this.classList.toggle('opened');
+                    this.setAttribute('aria-expanded', 
+                    this.classList.contains('opened'))" 
+                    aria-label="Main Menu">
+                    <svg width="50" height="50" viewBox="0 0 100 100">
+                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                    </button>
+                </div> <!-- id="navbar-container__menu" -->
+                <div class="navbar-header__logo">
+                    <a href="https://www.dccomics.com/" rel="home" target="_blank">
+                        <img src="./assets/image/dc-icone.svg" width="81" height="81" alt="home">
+                    </a>
+                </div> <!-- class="navbar-header__logo" -->
+            </div>
+            <!-- NAVBAR MENU -->
+            <div>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="#home" class="navbar-list__links">Home</a>
+                    </li>
+                    <li>
+                        <a href="#sobre" class="navbar-list__links">News</a>
+                    </li>
+                    <li>
+                        <a href="#comics" class="navbar-list__links">Histórias em quadrinhos</a>
+                    </li>
+                    <li>
+                        <a href="#galeria" class="navbar-list__links">Personagens</a>
+                    </li>
+                    <li>
+                        <a href="#footer" class="navbar-list__links">Contato</a>
+                    </li>
+                </ul> <!-- class="navbar-list" -->
+            </div>
+            <!-- NAVBAR ICONES -->
+            <div>
+                <ul class="navbar-icons">
+                    <li>
+                        <a href="#" target="_blank" class="navbar-icons__icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="navbar-icons__icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="navbar-icons__icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul> <!-- class="navbar-icons" -->
+            </div>
+        </nav> <!-- class="navbar" --> 
+    </header>
+    <!-- 2º SLIDER -->
+    <div class="container"> 
+        <div class="slider">
+            <div class="box1 box">
+                <div class="bg"></div>
+                <div class="details">
+                    <h1><!--I'm the first Box Black Adam-->DC STUDIOS
+                        A PRÓXIMA GERAÇÃO DE FILMES E TV DC</h1>
+                    <p class="p-slide">
+                        James Gunn e Peter Safran anunciam dez novos filmes e séries de TV da DC – todos ambientados dentro do mesmo universo compartilhado.
+                    </p>
+                    <button class="button-slide">Check Now</button>
+                </div>
+                <div class="illustration"><div class="inner"> </div></div>
+            </div>                         
+            <div class="box2 box">
+                <div class="bg"></div>
+                <div class="details">
+                    <h1><!--I'm the second Box-->SHAZAM! FURY OF THE GODS</h1>
+                    <p class="p-slide">
+                        Da New Line Cinema vem Shazam! Fury of the Gods, que continua a história do adolescente Billy Batson que, ao recitar a palavra mágica "SHAZAM!", é transformado em seu alter ego adulto de super-herói, Shazam. 
+                    </p>
+                    <button class="button-slide">Check Now</button>
+                </div>
+                <div class="illustration"><div class="inner"> </div></div>
+            </div>                 
+            <div class="box3 box">
+                <div class="bg"></div>
+                <div class="details">
+                    <h1><!--I'm the third Box -->Black Adam</h1>
+                    <p class="p-slide">
+                        Dwayne Johnson estrela a aventura de ação Adão Negro. O primeiro longa-metragem a explorar a história do super-herói da DC chega às telonas sob a direção de Jaume Collet-Serra (Jungle Cruise).
+                    </p>
+                    <button class="button-slide">Check Now</button>
+                </div>
+                <div class="illustration"><div class="inner"></div></div>
+            </div>                          
+            <div class="box4 box">
+                <div class="bg"></div>
+                <div class="details">
+                    <h1><!--I'm the fourth Box-->The Batman (2022)</h1>
+                    <p class="p-slide">
+                        Da Warner Bros. Pictures vem The Batman, de Matt Reeves, estrelado por Robert Pattinson no duplo papel do detetive vigilante de Gotham City e seu alter ego, o bilionário recluso Bruce Wayne.
+                    </p>
+                    <button class="button-slide">Check Now</button>
+                </div>
+                <div class="illustration"><div class="inner"></div></div>
+            </div>                          
+            <div class="box5 box">
+                <div class="bg"></div>
+                <div class="details">
+                    <h1><!--I'm the fifth Box-->Conheça o booster gold</h1>
+                    <p class="p-slide">
+                        O co-CEO da DC, James Gunn, anunciou uma série de planos empolgantes para os gigantes dos quadrinhos, incluindo uma nova série de TV para o personagem menos visto da Liga da Justiça, Booster Gold. 
+                    </p>
+                    <button class="button-slide">Check Now</button>
+                </div>
+                <div class="illustration"><div class="inner"></div></div>
+            </div>                            
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="prev" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)" fill="#fff"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="next" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)" fill="#fff"/></svg>
+        <div class="trail">
+                <div class="box1 active"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box4"></div>
+                <div class="box5"></div>
+        </div>
+    </div>  
+    <!-- NEWS PAGE -->
+    <section id="sobre" class="sobre">
+        <h2 class="section__title">
+            News<span class="section__title--destaque"> Page</span>
+        </h2>
+        <!-- SOBRE C - VIDEO CONTAINER -->
+        <div class="sobre-c">
+            <div class="video_container">
+                <div class="container-video">
+                  <!-- BLOCO DO LEITOR DE VIDEO -->
+                  <div id="video_player">
+                    <!-- contém três blocos de Div -->
+                    <video src="./assets/video/james-gunn-dc-studios720.mp4" id="main-video"></video>
+                    <div class="progressAreaTime">0:00</div>
+                    <div class="controls">
+                      <!-- ÁREA DE PROGRESSO -->
+                      <div class="progress-area">
+                        <div class="progress-bar">
+                          <span></span>
+                        </div>
+                      </div> <!-- class="progress-area" -->
+                      <div class="controls-list">
+                        <!-- CONTROLES À ESQUERDA -->
+                        <div class="controls-left">
+                          <span class="icon">
+                            <i class="material-icons fast-rewind">replay_10</i>
+                          </span>
+                          <span class="icon">
+                            <i class="material-icons play_pause">play_arrow</i>
+                          </span>
+                          <span class="icon">
+                            <i class="material-icons fast-forward">forward_10</i>
+                          </span>
+                          <span class="icon">
+                            <i class="material-icons volume">volume_up</i>
+                            <input type="range" min="0" max="100" class="volume_range"> <!-- tipo="variar" -->
+                          </span>
+                          <div class="timer">
+                            <span class="current">0:00</span> / <span class="duration">0:00</span>
+                          </div>
+                        </div> <!-- class="controls-left" -->
+                        <!-- CONTROLES DIREITOS -->
+                        <div class="controls-right">
+                          <span class="icon">
+                            <i class="material-icons auto-play active"></i>
+                          </span>
+                          <span class="icon">
+                            <i class="material-icons settigns-btn">settings</i>
+                          </span>
+                          <span class="icon">
+                            <i class="material-icons picture_in_picture">picture_in_picture_alt</i>
+                          </span>
+                          <span class="icon">
+                            <i class="material-icons fullscreen">fullscreen</i>
+                          </span>
+                        </div> <!-- class="controls-right" -->
+                      </div> <!-- class="controls-list" -->
+                    </div> <!-- class="controls" -->
+                    <!-- CONFIGURANDO VELOCIDADE DO VÍDEO -->
+                      <div id="settings">
+                      <div class="playback">
+                        <span>Velocidade de reprodução</span>
+                        <ul>
+                          <li data-speed="0.25" >0.25</li>
+                          <li data-speed="0.5">0.5</li>
+                          <li data-speed="0.75">0.75</li>
+                          <li data-speed="1" class="active">Normal</li>
+                          <li data-speed="1.25">1.25</li>
+                          <li data-speed="1.5">1.5</li>
+                          <li data-speed="1.75">1.75</li>
+                          <li data-speed="2">2</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div> <!-- id="video_player" -->
+                </div> <!-- class="container" -->   
+            </div>
+            <div class="sobre-texto">
+                <h3 class="sobre-texto__titulo">DC studios</h3>
+                <p>
+                    James Gunn compartilha sua visão para o futuro do Universo DC e a próxima lista da DC Studios. Prepare-se para ver histórias que você nunca imaginou ser possível antes na tela grande. 
+                </p>
+            </div> <!-- class="sobre-texto" -->
+        </div><!-- SOBRE C -->
+        <div class="sobre-films">
+            <h2 class="section__title">
+                LANÇAMENTOS
+                <span class="section__title--destaque">2023
+                </span>
+            </h2>
+            <div class="sobre-films__film">
+                <div class="sobre-films__mobile">
+                    <div class="sobre-films__container">
+                        <div class="sobre-films__links">
+                            <a href="#filmes" class="sobre-link">
+                                <div class="sobre-films__descricao">
+                                    <img src="./assets/image/filmes/flash-mobile.jpg" class="sobre-img__links" alt="O Batman (2022)"
+                                    width="192" height="291"> <!-- SOBRE-C__IMG--> 
+                                    <div class="sobre-films__links-bg">
+                                        <h4 class="sobre-text">The Flash</h4>
+                                        <p>
+                                            The Flash chega aos cinemas brasileiros em 22 de junho de 2023...
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sobre-films__links">
+                            <a href="#filmes" class="sobre-link">
+                                <div class="sobre-films__descricao">
+                                    <img src="./assets/image/filmes/besouro-azul.jpg" class="sobre-img__links" alt="Aves de Rapina (2020)"
+                                    width="192" height="291">
+                                    <div class="sobre-films__links-bg">
+                                        <h4 class="sobre-text">Besouro Azul</h4>
+                                        <p>
+                                            Filme do super-herói vivido por Xolo Maridueña será lançado nos cinemas em 2023...
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sobre-films__container">
+                        <div class="sobre-films__links">
+                            <a href="#filmes" class="sobre-link">
+                                <div class="sobre-films__descricao">
+                                    <img src="./assets/image/filmes/aquaman-2.jpg" class="sobre-img__links" alt="O Batman (2022)"
+                                    width="192" height="291"> <!-- SOBRE-C__IMG--> 
+                                    <div class="sobre-films__links-bg">
+                                        <h4 class="sobre-text">Aquaman and the Lost Kingdom</h4>
+                                        <p>
+                                            Aquaman 2 é um dos filmes da DC mais esperados pelos fãs em 2023...
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sobre-films__links">
+                            <a href="#filmes" class="sobre-link">
+                                <div class="sobre-films__descricao">
+                                    <img src="./assets/image/filmes/shazam-mobile-2.jpg" class="sobre-img__links" alt="Aves de Rapina (2020)"
+                                    width="192" height="291">
+                                    <div class="sobre-films__links-bg">
+                                        <h4 class="sobre-text">shazam fury of the gods</h4>
+                                        <p>
+                                            Data de estréia, 16 de março de 2023...
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="sobre-c">
+                    <div>
+                        <img src="./assets/image/batman-sobre.png" alt="Batman"
+                        class="sobre-c__img">
+                    </div>
+                </div> -->
+            </div>
+    </section>
+    <!-- DIFERENCIAIS -->
+    <div id="diferenciais" class="diferenciais">
+        <div class="pane-content">
+            <ul class="diferenciais-menu">
+                <li class="diferenciais-list">
+                    <a href="#" class="leaf">
+                        <img src="./assets/image/diferenciais/buy-bar-DCUI.svg" alt="">
+                        <div style="vertical-align: inherit;">
+                            <p style="vertical-align: inherit;" class="text"> 
+                                Quadrinhos digitais
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="diferenciais-list">
+                    <a href="#" class="leaf">
+                        <img src="./assets/image/diferenciais/buy-bar-DCshop.svg" alt=""> 
+                        <div style="vertical-align: inherit;">
+                            <p style="vertical-align: inherit;" class="text">
+                                Mercadorias DC
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="diferenciais-list">
+                    <a href="#" class="leaf">
+                        <img src="./assets/image/diferenciais/buy-bar-subscription.svg" alt=""> 
+                        <div style="vertical-align: inherit;">
+                            <p style="vertical-align: inherit;" class="text">
+                                Imprimir Assinaturas
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="diferenciais-list">
+                    <a href="#" class="leaf">
+                        <img src="./assets/image/diferenciais/buy-bar-locator.svg" alt=""> 
+                        <div style="vertical-align: inherit;">
+                            <p style="vertical-align: inherit;" class="text">
+                                Lojas de quadrinhos
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- COMICS -->
+    <section id="comics"> <!-- id="manga"> id="packages" -->
+        <div>
+            <h2 class="section__title">
+                Leia 
+                <span class="section__title--destaque">Agora
+                </span>
+            </h2>
+        </div>
+        <div class="comics">
+            <article class="comic-">
+                <a href="/assets/documentos/00-theflash.pdf" target="_blank" class="comic__link">
+                    <div class="comic__info">
+                        <img src="./assets/image/quadrinhos/flashpoint.png" alt="Naruto Volume 1" class="comic__thumb">
+                        <div class="info-header">
+                            <h3 class="info-header__tittle">
+                                Flashpoint
+                            </h3>
+                            <p class="info-body">
+                                Quando Barry Allen acorda em sua mesa, ele descobre que o mundo mudou.
+                            </p>
+                        </div>
+                    </div> <!-- class="comic__info" -->
+                </a>
+            </article>
+            <article class="comic-">
+                <a href="#"> 
+                    <div class="comic__info">
+                        <img src="./assets/image/quadrinhos/batman-ultimo-cav-01.png" alt="Naruto Volume 2" class="comic__thumb">
+                        <div class="info-header">
+                            <h3 class="info-header__tittle">
+                                Batman - O último cavaleiro da terra
+                            </h3>
+                            <p class="info-body">
+                                Livro um
+                            </p>
+                        </div>
+                    </div> <!-- class="comic__info" -->
+                </a>
+            </article>
+            <article class="comic-">
+                <a href="#">
+                    <div class="comic__info">
+                        <img src="./assets/image/quadrinhos/batman-e-robin-9.png" alt="Naruto Volume 3" class="comic__thumb">
+                        <div class="info-header">
+                            <h3 class="info-header__tittle">
+                                Batman e Robin #9
+                            </h3>
+                            <p class="info-body">
+                                Noite das corujas - os novos 52
+                            </p>
+                        </div>
+                    </div> <!-- class="comic__info" -->
+                </a>
+            </article>
+            <article class="comic-">
+                <a href="#">
+                    <div class="comic__info">
+                        <img src="./assets/image/quadrinhos/flashpoint-1.png" alt="Naruto Volume 4" class="comic__thumb">
+                        <div class="info-header">
+                            <h3 class="info-header__tittle">
+                                Flashpoint
+                            </h3>
+                            <p class="info-body">
+
+                            </p>
+                        </div>
+                    </div> <!-- class="comic__info" -->
+                </a>
+            </article>
+            <article class="comic-">
+                <a href="#">
+                    <div class="comic__info">
+                        <img src="./assets/image/quadrinhos/dceased.png" alt="Naruto Volume 5" class="comic__thumb">
+                        <div class="info-header">
+                            <h3 class="info-header__tittle">
+                                ‘DCeased: War of the Undead Gods‘
+                            </h3>
+                            <p class="info-body">
+
+                            </p>
+                        </div>
+                    </div> <!-- class="comic__info" -->
+                </a>
+            </article>
+            <article class="comic-">
+                <a href="#">
+                    <div class="comic__info">
+                        <img src="./assets/image/quadrinhos/dark-crisis-hq.png" alt="Naruto Volume 6" class="comic__thumb">
+                        <div class="info-header">
+                            <h3 class="info-header__tittle">
+                                Dark Crisis#1
+                            </h3>
+                            <p class="info-body">
+
+                            </p>
+                        </div>
+                    </div> <!-- class="comic__info" -->
+                </a>
+            </article>
+        </div> <!-- class="comics" -->
+    </section>
+    <!-- NEWSLETTER -->
+    <section>
+        <div class="newsletter-c">
+            <div class="newsletter-info">
+            <h2 class="newsletter-info__titulo">Quer receber promoções e ofertas exclusivas?</h2>
+            <p class="newsletter-info__descricao">Cadastre-se para receber nossas newsletters</p>
+            </div>
+            <form action="" class="newsletter-form">
+            <input type="text" class="newsletter-form__input" placeholder="Seu e-mail">
+            <button class="newsletter-info__submit" type="submit">Assinar</button>
+            </form>
+        </div> <!-- class="newsletter-c" -->
+    </section>
+    <!-- GALERIA -->
+    <section class="galeria" id="galeria">
+        <article class="galeria-item">
+          <img src="./assets/image/personagens/superman-gallery.jpg" alt="Superman" class="galeria-item__thumb">
+          <h4 class="galeria-item__local">Superman</h4>
+        </article>
+        <article class="galeria-item">
+          <img src="./assets/image/personagens/batman-gallery.jpg" alt="The Batman" class="galeria-item__thumb">
+          <h4 class="galeria-item__local">Batman</h4>
+        </article>
+        <article class="galeria-item">
+          <img src="./assets/image/personagens/mulher-maravilha-gallery.jpg" alt="Mulher Maravilha" class="galeria-item__thumb">
+          <h4 class="galeria-item__local">Mulher Maravilha</h4>
+        </article>
+        <article class="galeria-item">
+          <img src="./assets/image/personagens/flash-gallery.jpg" alt="Flash" class="galeria-item__thumb">
+          <h4 class="galeria-item__local">Flash</h4>
+        </article>
+        <article class="galeria-item">
+          <img src="./assets/image/personagens/aquaman-gallery.jpg" alt="Aquaman" class="galeria-item__thumb">
+          <h4 class="galeria-item__local">Aquaman</h4>
+        </article>
+        <article class="galeria-item">
+          <img src="./assets/image/personagens/lanterna-verde-gallery.jpg" alt="Lanterna Verde" class="galeria-item__thumb">
+          <h4 class="galeria-item__local">Lanterna Verde</h4>
+        </article>
+        <article class="galeria-item">
+          <img src="./assets/image/personagens/damian-wayne-gallery.jpg" alt="Damian Wayne" class="galeria-item__thumb">
+          <h4 class="galeria-item__local">Damian Wayne</h4>
+        </article>
+        <article class="galeria-item">
+          <img src="./assets/image/personagens/doctor-fate-gallery.jpg" alt="Doctor Fate" class="galeria-item__thumb">
+          <h4 class="galeria-item__local">Doctor Fate</h4>
+        </article>
+    </section>
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+        <div>
+            <div>
+                <div> <!-- MENU -->
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                        <a href="#" class="footer-list__link">Terms and Conditions</a>
+                        </li>
+                        <li class="footer-list__item">
+                        <a href="#" class="footer-list__link">Privacy Policy</a>
+                        </li>
+                        <li class="footer-list__item">
+                        <a href="#" class="footer-list__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-icons">
+                    <ul class="footer-icons__list">
+                        <li>
+                        <a href="#" class="footer-icons__icon" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#" class="footer-icons__icon" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#" class="footer-icons__icon" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                <p class="copyright">Copyright &copy; DC | Bem vindo a DC <span class="date"></span> Todos os direitos reservados by Tiago Santos
+                </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- MODAL -->
+    <div class="modal">
+        <div class="modal__close"><i class="fas fa-times"></i></div>
+        <div class="modal__content">
+          <div class="slider-modal">
+            <div class="slider-image">
+              <div class="slider-image__number">1 / 6</div>
+              <img src="./assets/image/personagens/superman-gallery.jpg" class="slider-image__img" alt="">
+            </div> <!-- class="slider-image" -->
+            <div class="slider-buttons">
+              <div class="slider-buttons__btn-prev">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div class="slider-buttons__btn-next">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </div> <!-- class="slider" -->
+          <p class="slider-image-description">Teste de caption</p>
+          <div class="slider-thumbs">
+            <div class="slider-thumbs__img">
+              <img src="./assets/image/personagens/superman-gallery.jpg" alt="Superman">
+            </div>
+            <div class="slider-thumbs__img">
+              <img src="./assets/image/personagens/batman-gallery.jpg" alt="The Batman">
+            </div>
+            <div class="slider-thumbs__img">
+              <img src="./assets/image/personagens/mulher-maravilha-gallery.jpg" alt="Mulher Maravilha">
+            </div>
+            <div class="slider-thumbs__img">
+              <img src="./assets/image/personagens/flash-gallery.jpg" alt="Flash">
+            </div>
+            <div class="slider-thumbs__img">
+              <img src="./assets/image/personagens/aquaman-gallery.jpg" alt="Aquaman">
+            </div>
+            <div class="slider-thumbs__img">
+              <img src="./assets/image/personagens/lanterna-verde-gallery.jpg" alt="Lanterna Verde">
+            </div>
+            <div class="slider-thumbs__img">
+              <img src="./assets/image/personagens/damian-wayne-gallery.jpg" alt="Damian Wayne">
+            </div>
+            <div class="slider-thumbs__img">
+              <img src="./assets/image/personagens/doctor-fate-gallery.jpg" alt="Doctor Fate">
+            </div>
+          </div> <!-- slider-thumbs -->
+        </div>
+    </div>
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+    <script  src="./js/script.js"></script>
+    <script src="./js/video-player.js"></script>
+    <script src="./js/script-main.js"></script>
+</body>
+</html>

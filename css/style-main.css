@@ -1,0 +1,661 @@
+:root {
+	--ff-primary: "Cairo", sans-serif;
+	
+	--clr-background: 	#F5F5F5;
+	--clr-white: 		#F1FCDE;
+	--clr-black: 		#090E01;
+	--clr-light-green: 	#DEF8AF;
+	--clr-medium-green: #88CC11;
+	--clr-dark-green: 	#456809;
+	--clr-orange:		#e67e22;
+	
+	--spacing: 0.25rem;
+	--transition: all 0.3s linear;
+	--dark-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+/**********************************/
+/* SOBRE NÓS - NEWS PAGE - MOBILE*/
+/**********************************/
+.sobre-texto
+{
+	margin-top: 1.6rem;
+	color: var(--clr-black);
+	padding-left: 1.4rem;
+}
+.sobre-texto p
+{
+	font-size: 1.6rem;
+	line-height: 3rem;
+}
+.sobre-texto__titulo
+{
+	font-size: 2.8rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: .8rem;
+}
+.sobre-films__film .sobre-films__mobile
+{	
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.sobre-films__mobile .sobre-films__container
+{
+	display: block;
+}
+.sobre-films__links
+{	
+	/* margin: 1rem;
+	background-color: var(--clr-background); */
+    padding: 1rem;
+}
+.sobre-link .sobre-films__descricao
+{	
+	background: var(--clr-background);
+	box-shadow: var(--dark-shadow);
+	max-width: auto;
+	font-size: 1.6rem;
+	color: var(--clr-black);
+	transition: var(--transition);
+	margin: 1rem;
+}
+.sobre-link .sobre-films__descricao:hover
+{
+	opacity: 0.9;
+	transition: var(--transition);
+	color: #0282F9;
+}
+.sobre-films__descricao .sobre-films__links-bg
+{
+	margin-top: 1.6rem;
+	padding: 1rem;
+}
+.sobre-films__descricao .sobre-films__links-bg p
+{
+	margin-top: 1rem;
+	line-height: 1.8rem;
+}
+.sobre-text
+{
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.sobre-img__links
+{
+	height: 100%;
+	width: 100%;
+}
+@media screen and (min-width: 768px)
+{	
+	#sobre
+	{	
+		background: url(/assets/image/dc-comics-logo-black.png) no-repeat bottom left;
+		position: relative;
+		margin-top: 10rem;
+		overflow: hidden;
+	}
+	.sobre-c
+	{	
+		display: flex; 
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.sobre-texto
+	{	
+		flex: 6 1 1rem;
+		margin-left: 1.5rem;
+	}
+	/* .sobre-films
+	{
+		
+	} */
+	.sobre-films__film .sobre-films__mobile
+	{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.sobre-films__mobile .sobre-films__container
+	{
+		display: flex;
+	}
+	.sobre-films__links
+	{	
+		/* margin: 1rem;
+		background-color: var(--clr-background); */
+		padding: 1rem;
+	}
+	.sobre-link .sobre-films__descricao
+	{
+		max-width: 30rem;
+		margin: 0 6rem;
+		margin-left: 0;
+	}
+	.sobre-films__film, .sobre-c
+	{	
+		display: flex;
+		
+	}
+}
+@media screen and (max-width: 1000px)
+{
+	#sobre
+	{
+		margin-top: 1.6rem;
+	}
+}
+/**********************************/
+/* DIFERENCIAIS */
+/**********************************/
+/* MOBILE */
+.diferenciais {
+	background-color: #0282F9;
+}
+.diferenciais .pane-content .diferenciais-menu
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.diferenciais-list
+{	
+	max-width: 5rem;
+	margin: 3.6rem 2.4rem;
+}
+.diferenciais-list .leaf img
+{
+	height: auto;
+}
+.diferenciais-list .leaf .text
+{	
+	font-size: 1.2rem;
+	color: #FFF;
+	margin-top: 1.4rem;
+	text-transform: uppercase;
+	align-items: center;
+}
+@media screen and (min-width: 928px)
+{
+	.diferenciais-list
+	{	
+		max-width: 6rem;
+		margin: 3.6rem 8.4rem;
+	}
+	.diferenciais-list .leaf img
+	{
+		height: auto;
+	}
+	.diferenciais-list .leaf .text
+	{
+		font-size: 1.2rem;
+	}
+}
+@media screen and (max-width: 500px)
+{
+	.diferenciais-list
+	{	
+		max-width: 6rem;
+		margin: 3.6rem 1rem;
+	}
+	.diferenciais-list .leaf img
+	{
+		height: 4rem;
+	}
+	.diferenciais-list .leaf .text
+	{
+		font-size: 1rem;
+	}
+	.container
+	{
+		z-index: -4;
+	}
+	.slider
+	{
+		z-index: -1;
+	}
+}
+/**********************************/
+/* COMICS */
+/**********************************/
+#comics{
+	position: relative;
+	top: 6rem;
+}
+.comics{
+	display: flex;
+	position: relative;
+	overflow-x: auto;
+}
+.comics::after{
+	content: "➤";
+	position: absolute;
+	font-size: 3.6rem;
+	font-weight: 900;
+	color: #0282F9;
+	top: .5rem;
+	right: 5.6rem;
+	animation: arrow .5s ease-in 0s /*sem delay*/ infinite alternate;
+}
+@keyframes arrow {
+	from {
+		right: 5.2rem;
+	}
+	to {
+		right: 3.2rem;
+	}
+}
+.comic-{
+	flex-shrink: 0;
+	max-width: 30rem;
+}
+.comic- + .comic- {
+	margin-left: 3rem;
+}
+.comic__info{
+	padding: 1.6rem;
+}
+.info-header__tittle{
+	margin-top: 1.4rem;
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: var(--clr-black);
+}
+.info-body{
+	margin: 1.2rem 0;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	color: var(--clr-black);
+}
+.comic__info .comic__link:hover
+{
+	color: #0282F9;
+}
+@media screen and (min-width: 781px){
+	.comics {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		overflow: visible;
+		padding-bottom: 3.2rem;
+	}
+	.comic- {
+		transition: var(--transition);
+		object-fit: cover;
+	}
+	.comic-:hover
+	{
+		transform: scale(1.02);
+	}
+	.comics::after{
+		content: "";
+	}
+	.comic- + .comic- {
+		margin: 0;
+	}
+	.comic-:nth-child(n+1) {
+		margin-top: 3rem;
+	}
+}
+/**********************************/
+/* Newsletter
+/**********************************/
+.newsletter-c
+{
+	margin-top: 8rem;
+	padding: 4rem 2rem;
+	background: var(--clr-background);
+	color: var(--clr-black);
+}
+.newsletter-info__titulo
+{
+	font-size: 2.8rem;
+	font-weight: 600;
+}
+.newsletter-info__descricao
+{
+	font-weight: 300;
+	font-size: 2.4rem;
+	font-style: italic;
+	line-height: 1.2;
+	margin: .8rem 0;
+}
+.newsletter-form
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.newsletter-form__input
+{	
+	flex: 3 1 37rem;
+	font-size: 1.8rem;
+	height: 6rem;
+	color: var(--clr-black);
+	border: none;
+	padding: 1rem;
+	border-radius: 0;
+}
+.newsletter-info__submit
+{	
+	flex: 1;
+	font-size: 1.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	background: #0282F9;
+	color: var(--clr-background);
+	cursor: pointer;
+	border: none;
+	letter-spacing: .2rem;
+	padding: 1.6rem;
+	transition: var(--transition);
+}
+.newsletter-info__submit:hover
+{
+	letter-spacing: .6rem;
+}
+@media screen and (min-width: 570px) 
+{
+	.newsletter-c
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.newsletter-info, .newsletter-form
+	{
+		flex: 1 1 26rem;
+	}	
+}
+@media screen and (min-width: 960px) 
+{
+	.newsletter-form__input
+	{
+		flex: 1;
+		height: auto;
+		margin-right: 3rem;
+	}
+	.newsletter-info__submit
+	{
+		font-size: 1.8rem;
+	}	
+}
+@media screen and (min-width: 1170px) 
+{
+	.newsletter-form__input
+	{
+		flex: 2;
+	}
+}
+/**********************************/
+/* GALERIA
+/**********************************/
+.galeria
+{	
+	padding: 0;
+}
+.galeria-item
+{
+	position: relative;
+	min-width: 17rem;
+	cursor: pointer;
+	overflow: hidden;
+}
+.galeria-item__thumb
+{
+	transition: var(--transition);
+}
+.galeria-item::before
+{
+	content: "";
+	position: absolute;
+	background: var(--clr-black);
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	transition: var(--transition);
+	z-index: 1;
+}
+.galeria-item__local
+{
+	position: absolute;
+	font-size: 1.7rem;
+	font-weight: 600;
+	left: 6.4rem;
+	bottom: 3.2rem;
+	color: var(--clr-background);
+	opacity: 0; /*O texto do elemento não aparece*/
+	z-index: 2;
+	transition: var(--transition);
+}
+.galeria-item:hover .galeria-item__thumb
+{
+	transform: scale(1.2);
+}
+.galeria-item:hover .galeria-item__local
+{
+	left: 3.2rem;
+	opacity: 1;
+}
+.galeria-item:hover.galeria-item::before
+{
+	opacity: .7;
+}
+@media screen and (min-width: 768px)
+{
+	.galeria
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.galeria-item
+	{
+		flex: 0 0 50%;
+	}
+}
+@media screen and (min-width: 960px) 
+{
+	.galeria-item
+	{
+		flex: 0 0 25%;
+	}
+	.galeria-item__local
+	{
+		font-size: 1.7rem;
+	}
+}
+/**********************************/
+/* 9. Footer
+/**********************************/
+.footer
+{	
+	background: url(../assets/image/footer-bg.jpg);
+	margin-top: 4rem;
+	font-size: 1.4rem;
+	font-weight: 900;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 6.2rem 0;
+}
+.footer-list, .footer-icons .footer-icons__list
+{	
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.footer-list__link
+{
+	color: var(--clr-background);
+	padding: 1.6rem;
+	transition: var(--transition);
+}
+.footer-list__link:hover
+{
+	color: #0282F9;
+	transition: var(--transition);
+}
+.footer-icons
+{
+	margin: 3.2rem 0;
+}
+.footer-icons__icon
+{
+	margin-right: 1.6rem;
+	color: var(--clr-background);
+	font-size: 2rem;
+	transition: var(--transition);
+}
+.footer-icons__icon:hover
+{
+	color: #0282F9;
+}
+.copyright
+{
+	font-weight: 300;
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+/*-- QUEBRA DE LINHA COM CSS */
+/* 
+	after - pseudo-elemento, a propriedade content contén \a.
+
+	quebras de linhas precisam de duas coisas. A primeira é a propriedade content do pseudo elemento definida como \a, esse \a significa uma quebra de linha. A segunda é necessário usar a propriedade white-space e defenir como pre, pois sinaliza ao navegador, para que ele leia esse \a como uma quebra de linha
+*/
+.date::after
+{
+	content: "\a";
+	white-space: pre;
+}
+@media screen and (min-width: 580px) {
+	.footer{
+		font-size: 1.4rem;
+	}
+	.date::after
+	{
+		content: "";
+	}
+}
+/**********************************/
+/* 10. Modal
+/**********************************/
+.modal
+{
+	position: fixed;
+	background: rgba(0, 0, 0, 0.6);
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: var(--clr-background);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	padding: 1.6rem;
+	z-index: 3;
+}
+.modal__close
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 3rem;
+	padding: 1.6rem;
+	cursor: pointer;
+	z-index: 3;
+}
+.slider-modal
+{
+	position: relative;
+}
+.slider-image__number
+{	
+	position: absolute;
+	background: var(--clr-black);
+	font-size: 1.4rem;
+	padding: .3rem;
+	margin-left: .8rem;
+	margin-top: .8rem;
+}
+.slider-buttons
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.slider-buttons__btn-prev, .slider-buttons__btn-next
+{
+	font-size: 3rem;
+	padding: 1.6rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	transition: var(--transition);
+}
+.slider-buttons__btn-prev:hover, .slider-buttons__btn-next:hover
+{
+	color: #0282F9;
+}
+.slider-image-description
+{
+	background: var(--clr-black);
+	text-align: center;
+}
+.slider-thumbs
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.slider-thumbs__img
+{
+	position: relative;
+	flex: 0 0 25%;
+	cursor: pointer;
+}
+.slider-thumbs__img::before
+{
+	content: "";
+	position: absolute;
+	background: var(--clr-black);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+	transition: var(--transition);
+}
+.slider-thumbs__img:hover.slider-thumbs__img::before
+{
+	opacity: 0;
+	transition: var(--transition);
+}
+/*MODIFICADOR PARA USARNO JAVASCRIPT*/
+.slider-thumbs__img--active.slider-thumbs__img::before
+{
+	opacity: 0;
+}
+@media screen and (min-width: 648px)
+{
+	.modal
+	{	
+		padding: 5.6rem;
+	}
+}
+@media screen and (min-width: 768px)
+{
+	.modal
+	{
+		padding: 1.6rem;
+	}
+	.slider-thumbs__img
+	{
+		flex: 1;
+		max-width: 9.6rem;
+	}
+}
